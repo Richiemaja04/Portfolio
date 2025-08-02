@@ -1243,7 +1243,7 @@
                     <h3>Get In Touch</h3>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <img src="portfolio/images/email-icon.png" alt="Email Icon" width="24" height="24" />
+                            <img src="images/email-icon.png" alt="Email Icon" width="24" height="24" />
                         </div>
                         <div>
                             <h4>Email</h4>
@@ -1252,7 +1252,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <img src="portfolio/images/whatsapp-icon.png" alt="Phone Icon" width="24" height="24" />
+                            <img src="images/whatsapp-icon.png" alt="Phone Icon" width="24" height="24" />
                         </div>
                         <div>
                             <h4>Phone</h4>
@@ -1261,7 +1261,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <img src="portfolio/images/instagram-icon.png" alt="Location Icon" width="24" height="24" />
+                            <img src="images/instagram-icon.png" alt="Location Icon" width="24" height="24" />
                         </div>
                         <div>
                             <h4>Instagram</h4>
@@ -1270,7 +1270,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <img src="portfolio/images/github-icon.png" alt="Github icon" width="24" height="24" />
+                            <img src="images/github-icon.png" alt="Github icon" width="24" height="24" />
                         </div>
                         <div>
                             <h4>GitHub</h4>
@@ -1279,7 +1279,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <img src="portfolio/images/linkedin-icon.png" alt="Linkedin Icon" width="24" height="24" />
+                            <img src="images/linkedin-icon.png" alt="Linkedin Icon" width="24" height="24" />
                         </div>
                         <div>
                             <h4>LinkedIn</h4>
@@ -1319,19 +1319,19 @@
         <div class="container">
             <div class="social-links">
                 <a href="mailto:richiemaja04@gmail.com" class="social-link">
-                    <img src="portfolio/images/email-icon.png" alt="Email" width="24" height="24" />
+                    <img src="images/email-icon.png" alt="Email" width="24" height="24" />
                 </a>
                 <a href="https://github.com/Richiemaja04" class="social-link" target="_blank">
-                    <img src="portfolio/images/github-icon.png" alt="GitHub" width="24" height="24" />
+                    <img src="images/github-icon.png" alt="GitHub" width="24" height="24" />
                 </a>
                 <a href="https://www.linkedin.com/in/richie-m-50b542294" class="social-link" target="_blank">
-                    <img src="portfolio/images/linkedin-icon.png" alt="LinkedIn" width="24" height="24" />
+                    <img src="images/linkedin-icon.png" alt="LinkedIn" width="24" height="24" />
                 </a>
                 <a href="https://instagram.com/_irichie_" class="social-link" target="_blank">
-                      <img src="portfolio/images/instagram-icon.png" alt="Instagram" width="24" height="24" />
+                      <img src="images/instagram-icon.png" alt="Instagram" width="24" height="24" />
                 </a>
                 <a href="https://wa.me/+919360857805" class="social-link">
-                     <img src="portfolio/images/whatsapp-icon.png" alt="Phone" width="24" height="24" />
+                     <img src="images/whatsapp-icon.png" alt="Phone" width="24" height="24" />
                 </a>
             </div>
             <p style="color: var(--text-secondary);">© 2025 Richie M. Crafted with passion for the future.</p>
@@ -1602,34 +1602,6 @@
         const revealElements = document.querySelectorAll('.project-card, .skill-card');
         revealElements.forEach((el, index) => {
             el.style.animationDelay = `${index * 0.1}s`;
-        });
-
-        // Interactive cursor effect
-        const cursor = document.createElement('div');
-        cursor.style.cssText = `
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            background: rgba(0, 212, 255, 0.3);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            transition: transform 0.1s ease;
-            mix-blend-mode: difference;
-        `;
-        document.body.appendChild(cursor);
-
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX - 10 + 'px';
-            cursor.style.top = e.clientY - 10 + 'px';
-        });
-
-        document.addEventListener('mousedown', () => {
-            cursor.style.transform = 'scale(1.5)';
-        });
-
-        document.addEventListener('mouseup', () => {
-            cursor.style.transform = 'scale(1)';
         });
 
         // Progressive enhancement for modern browsers
